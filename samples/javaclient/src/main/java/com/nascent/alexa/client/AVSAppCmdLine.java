@@ -6,8 +6,15 @@
  * 
  */
 
-package com.amazon.alexa.avs;
+package com.nascent.alexa.client;
 
+import com.amazon.alexa.avs.AVSAudioPlayerFactory;
+import com.amazon.alexa.avs.AVSController;
+import com.amazon.alexa.avs.AlertManagerFactory;
+import com.amazon.alexa.avs.DialogRequestIdAuthority;
+import com.amazon.alexa.avs.ExpectSpeechListener;
+import com.amazon.alexa.avs.RecordingRMSListener;
+import com.amazon.alexa.avs.RequestListener;
 import com.amazon.alexa.avs.auth.AccessTokenListener;
 import com.amazon.alexa.avs.auth.AuthSetup;
 import com.amazon.alexa.avs.auth.companionservice.RegCodeDisplayHandler;
@@ -233,7 +240,7 @@ public class AVSAppCmdLine implements ExpectSpeechListener, RecordingRMSListener
     private String readCarriageReturnFromCommandLine()
     {
     	String rc = "";
-        InputStreamReader r=new InputStreamReader(System.in);  
+        InputStreamReader r=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(r);
         try
         {
@@ -281,8 +288,7 @@ public class AVSAppCmdLine implements ExpectSpeechListener, RecordingRMSListener
     
     public boolean interactionPumpIsBusy()
     {
-    	return (!actionButton.isEnabled() || !actionButton.getText().equals(START_LABEL)
-                || controller.isSpeaking());
+    	return (!actionButton.isEnabled() || !actionButton.getText().equals(START_LABEL));
     }
 
     @Override
@@ -291,7 +297,7 @@ public class AVSAppCmdLine implements ExpectSpeechListener, RecordingRMSListener
         Thread thread = new Thread() {
             @Override
             public void run() {
-                while (interactionPumpIsBusy()) 
+                while (interactionPumpIsBusy() || controller.isSpeaking()) 
                 {
                     try 
                     {
