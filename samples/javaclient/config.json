@@ -1,17 +1,21 @@
 {
-    "productId":"my_device",
+    "productId":"BabackAlexaTest",
     "dsn":"123456",
-    "provisioningMethod":"companionService",
+    "provisioningMethod":"companionApp",
+    "avsHost":"https://avs-alexa-na.amazon.com",
     "companionApp":{
         "localPort":8443,
-        "sslKeyStore":"/home/pi/Desktop/alexa-avs-raspberry-pi-master/samples/javaclient/certs/server/jetty.pkcs12",
+        "lwaUrl":"https://api.amazon.com",
+        "sslKeyStore":"/Users/baback/Documents/dev/alexa-build/rpi/alexa-avs-raspberry-pi-master/samples/javaclient/certs/server/jetty.pkcs12",
         "sslKeyStorePassphrase":"",
-        "lwaUrl":"https://api.amazon.com"
+        "clientId":"amzn1.application-oa2-client.1da42e4743e343f4b3bb475bb3f4f769",
+        "refreshToken":"Atzr|IwEBIJywYAyQV0Z18EVQAX1FJNmcAn0r6uUjtAI1qHMWwA3de52WCcqplSDqUZJFMvAAkSX7Y7a0_4fhRzp5pRIfDfuk9xjCYURtKAxM-3xdi7TkwUxABZfNFsOv2R7Ak_ik_e5jgDr2ihMNVwQPW-2CMq3N-X1gaMZ-aUaV0WMwFyF2yQOt7eHwQMHlgYMUA_SC8ITdKpGfA-iGsYU_P-bFMxf30-01zolBGRpHOVzJdhYh4xPwAOeng7leE3DnXn-3rd4IBe3la6_BYa7sZIsygNA9jkbJkeLnMhaFDgsDtdVYKooDEfTjUrMjk6_l2nPlYQ84OnWayL2LuVpP9rx33gZP3TN9aGpklL10fuycC99jfuFVPA0K0Q-jYk704gnm68Wsdzq4u0DuNxXU4kiSMQtPdkqfQ9a0dfi49bTksRg2wHn2tZjfg394vrGo7-vP0atCb1qsDXkz6f0fxCoc0Dfc3bUVgQ4FpJuAJ9mbpK-EGFd4lJBPN_YYxWn0iWe9CsmHLbe2ksFosmRB75ctTe6Y"
     },
     "companionService":{
         "serviceUrl":"https://localhost:3000",
-        "sslClientKeyStore":"/home/pi/Desktop/alexa-avs-raspberry-pi-master/samples/javaclient/certs/client/client.pkcs12",
+        "sslClientKeyStore":"/Users/baback/Documents/dev/alexa-build/rpi/alexa-avs-raspberry-pi-master/samples/javaclient/certs/client/client.pkcs12",
         "sslClientKeyStorePassphrase":"",
-        "sslCaCert":"/home/pi/Desktop/alexa-avs-raspberry-pi-master/samples/javaclient/certs/ca/ca.crt"
+        "sslCaCert":"/Users/baback/Documents/dev/alexa-build/rpi/alexa-avs-raspberry-pi-master/samples/javaclient/certs/ca/ca.crt",
+        "sessionId":"ac8a512e-ffa5-4f34-aa2f-ffd120619e99"
     }
 }

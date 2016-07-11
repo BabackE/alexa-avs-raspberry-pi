@@ -305,6 +305,7 @@ public class AVSApp extends JFrame implements ExpectSpeechListener, RecordingRMS
                             actionButton.doClick(); // hit stop if we get through the autoendpoint
                                                     // time
                         } catch (InterruptedException e) {
+                        	System.out.println(e.toString());
                             return;
                         }
                     }

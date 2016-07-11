@@ -110,10 +110,17 @@ public class AVSAudioPlayer {
         INTERRUPTED,
         FINISHED;
     }
+    
+    private enum ResourcePlayState {
+    	PLAYING,
+    	FINISHED
+    }
 
     private volatile AlertState alertState = AlertState.FINISHED;
 
     private volatile SpeechState speechState = SpeechState.FINISHED;
+    
+    private volatile ResourcePlayState resPlayState = ResourcePlayState.FINISHED; 
 
     private boolean currentlyMuted;
 
@@ -374,6 +381,14 @@ public class AVSAudioPlayer {
      */
     public boolean isSpeaking() {
         return speechState == SpeechState.PLAYING;
+    }
+    
+    /**
+     * Returns true if Alexa is currently playing a resource MP3
+     */
+    public boolean isPlayingMP3Resource()
+    {
+    	return resPlayState == ResourcePlayState.PLAYING;
     }
 
     /**
@@ -831,7 +846,9 @@ public class AVSAudioPlayer {
     private synchronized void play(final InputStream inpStream, boolean block) {
         playThread = new Thread() {
             @Override
-            public void run() {
+            public void run() 
+            {
+            	resPlayState = ResourcePlayState.PLAYING;
                 synchronized (playLock) {
                     try {
                         speaker = new Player(inpStream);
@@ -843,6 +860,7 @@ public class AVSAudioPlayer {
                     }
                     playLock.notifyAll();
                 }
+            	resPlayState = ResourcePlayState.FINISHED;
             }
         };
         playThread.start();

@@ -57,6 +57,8 @@ public class AVSController
     private static final String START_SOUND = "res/start.mp3";
     private static final String END_SOUND = "res/stop.mp3";
     private static final String ERROR_SOUND = "res/error.mp3";
+    private static final String STARTUP_SOUND = "res/startup.mp3";
+    private static final String HELLO_SOUND = "res/hello.mp3";
     private static final SpeechProfile PROFILE = SpeechProfile.CLOSE_TALK;
     private static final String FORMAT = "AUDIO_L16_RATE_16000_CHANNELS_1";
 
@@ -366,6 +368,13 @@ public class AVSController
     public void recordingCompleted() {
         player.playMp3FromResource(END_SOUND);
     }
+    
+    public void playStartupIntro() {
+    	player.playMp3FromResource(STARTUP_SOUND);
+    }
+    public void playHello() {
+    	player.playMp3FromResource(HELLO_SOUND);
+    }
 
     public boolean isSpeaking() {
         return player.isSpeaking();
@@ -373,6 +382,11 @@ public class AVSController
 
     public boolean isPlaying() {
         return player.isPlaying();
+    }
+    
+    public boolean isPlayingMP3Resource()
+    {
+    	return player.isPlayingMP3Resource();
     }
 
     @Override

@@ -193,7 +193,8 @@
               <argument>-classpath</argument>
               <classpath/>
               <argument>-Djna.library.path=${env.VLC_PATH}</argument>
-              <argument>com.amazon.alexa.avs.AVSAppCmdLine</argument>
+              <argument>-Djava.library.path=.</argument>
+              <argument>com.nascent.alexa.client.AVSAppLaunch</argument>
             </arguments>
           </configuration>
         </plugin>

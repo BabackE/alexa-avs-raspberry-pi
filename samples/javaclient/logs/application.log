@@ -1,0 +1,2230 @@
+17:21:15.631 [main] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient starting
+17:21:15.814 [main] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient started
+17:21:15.921 [Thread-15] ERROR com.amazon.alexa.avs.auth.AuthSetup - Failed to start companion app provisioning server
+java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.server.handler.HandlerWrapper.destroy(HandlerWrapper.java:134) ~[jetty-server-9.3.7.v20160115.jar:9.3.7.v20160115]
+	at com.amazon.alexa.avs.auth.companionapp.server.CompanionAppProvisioningServer.startServer(CompanionAppProvisioningServer.java:97) ~[classes/:?]
+	at com.amazon.alexa.avs.auth.AuthSetup$1.run(AuthSetup.java:73) [classes/:?]
+17:21:16.002 [pool-6-thread-1] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "System",
+      "name" : "SynchronizeState",
+      "messageId" : "3a2a4308-3243-4104-9342-27b1e64bbcd7"
+    },
+    "payload" : { }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:21:16.373 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Establishing downchannel
+17:21:16.973 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:21:16.973 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 1262e7fffe8c9031-00000d6d-0001211a-9c6dc43aa09c3308-cfe22850-1-
+content-type: multipart/related; boundary=------abcde123; type=application/json
+
+
+17:21:17.371 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:21:17.371 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 1262e7fffe8c9031-00000d6d-0001211a-9c6dc43aa09c3308-cfe22850-3-
+
+
+17:21:17.371 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:21:30.683 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "b92c6b92-afb5-41f0-8d55-e17734165a95",
+      "dialogRequestId" : "4526e88a-3199-458c-bd6e-46396b13ab0b"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:21:51.770 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:21:51.770 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 1262e7fffe8c9031-00000d6d-0001211a-9c6dc43aa09c3308-cfe22850-5-
+
+
+17:21:51.770 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:22:10.633 [Thread-11] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient stopping
+17:22:10.634 [Thread-11] INFO  com.amazon.alexa.avs.http.AVSClient - [java.lang.Thread.getStackTrace(Thread.java:1552), com.amazon.alexa.avs.http.AVSClient$1.lifeCycleStopping(AVSClient.java:180), org.eclipse.jetty.util.component.AbstractLifeCycle.setStopping(AbstractLifeCycle.java:197), org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:88), com.amazon.alexa.avs.http.AVSClient.shutdown(AVSClient.java:441), com.amazon.alexa.avs.AVSController$2.run(AVSController.java:126)]
+17:26:29.496 [main] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient starting
+17:26:29.670 [main] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient started
+17:26:29.772 [Thread-15] ERROR com.amazon.alexa.avs.auth.AuthSetup - Failed to start companion app provisioning server
+java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.server.handler.HandlerWrapper.destroy(HandlerWrapper.java:134) ~[jetty-server-9.3.7.v20160115.jar:9.3.7.v20160115]
+	at com.amazon.alexa.avs.auth.companionapp.server.CompanionAppProvisioningServer.startServer(CompanionAppProvisioningServer.java:97) ~[classes/:?]
+	at com.amazon.alexa.avs.auth.AuthSetup$1.run(AuthSetup.java:73) [classes/:?]
+17:26:29.845 [pool-6-thread-1] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "System",
+      "name" : "SynchronizeState",
+      "messageId" : "4af60c38-b961-4537-9699-ec3ed12a90db"
+    },
+    "payload" : { }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:26:30.247 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Establishing downchannel
+17:26:31.016 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:26:31.017 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-1-
+
+
+17:26:31.017 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:26:31.109 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:26:31.109 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-3-
+content-type: multipart/related; boundary=------abcde123; type=application/json
+
+
+17:26:40.327 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "cd67f6e3-9d70-4ddf-9ca8-e9222a465a3c",
+      "dialogRequestId" : "b11fccc8-0870-443b-a2ff-0664b0b8a3c4"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:26:47.534 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:26:47.534 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-5-
+content-type: multipart/related;boundary=5b9fbc9a-6ffc-46c1-9ffe-c28ae1c88b12;start=metadata.1468196807501;type="application/json"
+
+
+17:26:47.638 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "c182850c-79ae-47b2-a78a-29fa128ba3ca",
+      "dialogRequestId" : "b11fccc8-0870-443b-a2ff-0664b0b8a3c4"
+    },
+    "payload" : {
+      "url" : "cid:KnowledgePrompt.739fd417-5c16-4801-9643-80422a9ddcad_1484673026",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.Domain:Application:Knowledge#ACRI#KnowledgePrompt.739fd417-5c16-4801-9643-80422a9ddcad"
+    }
+  }
+}
+17:26:47.712 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:26:47.716 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "16ff1765-f2bf-47b1-b026-128652e18e5c"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Knowledge#ACRI#KnowledgePrompt.739fd417-5c16-4801-9643-80422a9ddcad"
+    }
+  }
+}
+17:26:48.013 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:26:48.013 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-7-
+
+
+17:26:48.013 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:26:54.166 [Thread-39] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "1be679a6-2baa-4217-8ccf-d2245e05a757"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Knowledge#ACRI#KnowledgePrompt.739fd417-5c16-4801-9643-80422a9ddcad"
+    }
+  }
+}
+17:26:54.452 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:26:54.452 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-9-
+
+
+17:26:54.452 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:26:55.202 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "9497d2af-e939-4953-9307-4ea224f4ced1",
+      "dialogRequestId" : "4548b215-c78e-44bc-be88-505ea5305661"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Knowledge#ACRI#KnowledgePrompt.739fd417-5c16-4801-9643-80422a9ddcad",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:27:02.041 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:27:02.041 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-11-
+content-type: multipart/related;boundary=8adb88d7-0fc9-4b40-98ad-7c4d5326c0ef;start=metadata.1468196822011;type="application/json"
+
+
+17:27:02.044 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "b728d8cf-71f7-49ac-bc9b-2100020e0904",
+      "dialogRequestId" : "4548b215-c78e-44bc-be88-505ea5305661"
+    },
+    "payload" : {
+      "url" : "cid:DeviceTTSRenderer_06e424a6-0b2a-471c-a27a-31601a86ed9f_869869719",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#DeviceTTSRenderer_06e424a6-0b2a-471c-a27a-31601a86ed9f"
+    }
+  }
+}
+17:27:02.045 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:02.045 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "07408100-892b-4948-9d0c-3d5b662a6798"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#DeviceTTSRenderer_06e424a6-0b2a-471c-a27a-31601a86ed9f"
+    }
+  }
+}
+17:27:02.333 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:02.333 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-13-
+
+
+17:27:02.333 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:03.842 [Thread-52] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "b3b5f658-1b2e-494b-94d2-3ff4318a53b8"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#DeviceTTSRenderer_06e424a6-0b2a-471c-a27a-31601a86ed9f"
+    }
+  }
+}
+17:27:04.142 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:04.142 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-15-
+
+
+17:27:04.142 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:09.604 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "3243cb30-df7e-42f1-bed5-0c9712112546",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#DeviceTTSRenderer_06e424a6-0b2a-471c-a27a-31601a86ed9f",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:27:15.659 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:27:15.659 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-17-
+content-type: multipart/related;boundary=183ef089-3a60-457b-a31b-ea32eeec5c42;start=metadata.1468196835625;type="application/json"
+
+
+17:27:15.766 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "155dd8a1-8317-4804-ae07-b1155ff6c71f",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_0898b1e3-7ab6-431b-8541-d5a6459d2e09_1944615536",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_0898b1e3-7ab6-431b-8541-d5a6459d2e09"
+    }
+  }
+}
+17:27:15.767 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "7d626b46-9818-49ad-91bc-f5ed219eb4df",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_57bc4791-1a1a-46c2-9341-aca56d225ab2_555014127",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_57bc4791-1a1a-46c2-9341-aca56d225ab2"
+    }
+  }
+}
+17:27:15.767 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "180d3be3-0f96-4a0e-bc97-f92b6946b63f",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_f690e3ee-0e9d-4ef4-be97-2fb65a9a9782_1530149927",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_f690e3ee-0e9d-4ef4-be97-2fb65a9a9782"
+    }
+  }
+}
+17:27:15.768 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "2308592e-ba4a-4149-b12f-3220c73c2178",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_54082ce1-dd37-443a-8552-118f6ca0ded9_1361908201",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_54082ce1-dd37-443a-8552-118f6ca0ded9"
+    }
+  }
+}
+17:27:15.768 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "2d8423a7-ed0f-4ba3-aa33-12350ed5061f",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_a8f16299-b35e-4473-8d0f-cd74ac223991_1393314329",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_a8f16299-b35e-4473-8d0f-cd74ac223991"
+    }
+  }
+}
+17:27:15.770 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "8755a34c-b5e2-41f7-ae33-1c7405c5c44b",
+      "dialogRequestId" : "e690d0aa-9d15-4d90-8093-7f6fd3c5b051"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:27:15.941 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:15.941 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "5df1ce2d-be97-499b-a242-fd2ae8794174"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_0898b1e3-7ab6-431b-8541-d5a6459d2e09"
+    }
+  }
+}
+17:27:16.438 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:16.439 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-19-
+
+
+17:27:16.439 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:25.390 [Thread-63] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "323a836d-2c83-45d8-9e77-5e4dbfc7fd52"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_0898b1e3-7ab6-431b-8541-d5a6459d2e09"
+    }
+  }
+}
+17:27:25.391 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:25.391 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "79ee63dc-ea17-4758-8d4c-928dcada2580"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_57bc4791-1a1a-46c2-9341-aca56d225ab2"
+    }
+  }
+}
+17:27:25.677 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:25.677 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-21-
+
+
+17:27:25.677 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:25.982 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:25.983 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-23-
+
+
+17:27:25.983 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:28.807 [Thread-67] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "f1bfdf8b-1a3a-4dfa-be0b-6e37d7dbf7b7"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_57bc4791-1a1a-46c2-9341-aca56d225ab2"
+    }
+  }
+}
+17:27:28.809 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:28.809 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "5e24bbe7-1c29-4980-822f-905bdfb8c40c"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_f690e3ee-0e9d-4ef4-be97-2fb65a9a9782"
+    }
+  }
+}
+17:27:29.135 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:29.135 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-25-
+
+
+17:27:29.135 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:29.431 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:29.431 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-27-
+
+
+17:27:29.431 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:31.125 [Thread-69] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "d49d3d78-31eb-473b-9f8f-9530c4233267"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_f690e3ee-0e9d-4ef4-be97-2fb65a9a9782"
+    }
+  }
+}
+17:27:31.125 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:31.125 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "6ac48afe-024a-40c3-991a-36e49fed2072"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_54082ce1-dd37-443a-8552-118f6ca0ded9"
+    }
+  }
+}
+17:27:31.502 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:31.503 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-29-
+
+
+17:27:31.503 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:31.801 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:31.801 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-31-
+
+
+17:27:31.801 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:32.265 [Thread-71] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "c514943b-f94e-4295-910a-5d358d4f9bc2"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_54082ce1-dd37-443a-8552-118f6ca0ded9"
+    }
+  }
+}
+17:27:32.266 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:32.266 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "62d3b72e-fded-488b-aa4e-69c55dd7538d"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_a8f16299-b35e-4473-8d0f-cd74ac223991"
+    }
+  }
+}
+17:27:32.549 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:32.549 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-33-
+
+
+17:27:32.549 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:32.840 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:32.840 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-35-
+
+
+17:27:32.840 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:39.667 [Thread-73] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "f5bd3fb3-173c-4266-9fb3-f08c9a4bf4db"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_a8f16299-b35e-4473-8d0f-cd74ac223991"
+    }
+  }
+}
+17:27:39.667 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechRecognizer.ExpectSpeech
+17:27:39.958 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:39.959 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-37-
+
+
+17:27:39.959 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:40.055 [Thread-75] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "352e7366-bcbb-4ab9-ab44-da5bd6fc4ea2",
+      "dialogRequestId" : "7a0d2086-e84c-4e6b-8257-237507b64e97"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_a8f16299-b35e-4473-8d0f-cd74ac223991",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:27:46.871 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:27:46.872 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-39-
+content-type: multipart/related;boundary=8075f849-e8de-49ce-aec3-15348886184a;start=metadata.1468196866836;type="application/json"
+
+
+17:27:46.959 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "90b3de7d-2b2c-4885-a2d6-e89d53d8202b",
+      "dialogRequestId" : "7a0d2086-e84c-4e6b-8257-237507b64e97"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3844a975-41af-427d-b819-2a9158a25bf9_1937786205",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3844a975-41af-427d-b819-2a9158a25bf9"
+    }
+  }
+}
+17:27:46.960 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "703d9c13-2342-443a-a93b-4907a303710e",
+      "dialogRequestId" : "7a0d2086-e84c-4e6b-8257-237507b64e97"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_deec2041-215f-4709-9061-a8da8de7d42a_78846277",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_deec2041-215f-4709-9061-a8da8de7d42a"
+    }
+  }
+}
+17:27:46.961 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "1e3cd310-1a9f-4774-8047-65b285820d18",
+      "dialogRequestId" : "7a0d2086-e84c-4e6b-8257-237507b64e97"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_e0164531-fd5a-47f2-a798-1615050d887d_782563510",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_e0164531-fd5a-47f2-a798-1615050d887d"
+    }
+  }
+}
+17:27:46.962 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "8fba3267-1c27-428f-891d-1fff43613b30",
+      "dialogRequestId" : "7a0d2086-e84c-4e6b-8257-237507b64e97"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:27:46.964 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:46.964 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "40b9ee1d-6d7e-4dd3-bccc-5c62acb4cba7"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3844a975-41af-427d-b819-2a9158a25bf9"
+    }
+  }
+}
+17:27:47.361 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:47.361 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-41-
+
+
+17:27:47.361 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:50.914 [Thread-82] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "629f7444-d8df-43dd-9e16-a2ba4f55a8c5"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3844a975-41af-427d-b819-2a9158a25bf9"
+    }
+  }
+}
+17:27:50.915 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:50.915 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "1eb1e9b7-7ba7-42ef-9c8c-b2bb27212b84"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_deec2041-215f-4709-9061-a8da8de7d42a"
+    }
+  }
+}
+17:27:51.203 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:51.203 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-43-
+
+
+17:27:51.203 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:51.504 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:51.504 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-45-
+
+
+17:27:51.504 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:52.048 [Thread-86] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "db852454-3000-46f8-bf93-67ab16dafd49"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_deec2041-215f-4709-9061-a8da8de7d42a"
+    }
+  }
+}
+17:27:52.048 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:27:52.048 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "2e12cfae-b399-4a34-80bb-c17624d045bc"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_e0164531-fd5a-47f2-a798-1615050d887d"
+    }
+  }
+}
+17:27:52.337 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:52.337 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-47-
+
+
+17:27:52.337 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:52.633 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:27:52.634 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-49-
+
+
+17:27:52.634 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:27:54.905 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "c4dc1769-18f8-4e6b-9259-ad7c253f4d2f",
+      "dialogRequestId" : "bb4155c4-117e-4a90-a7f7-54bf2e0e76fe"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_e0164531-fd5a-47f2-a798-1615050d887d",
+      "offsetInMilliseconds" : 2848,
+      "playerActivity" : "PLAYING"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:28:01.387 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:28:01.387 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-51-
+content-type: multipart/related;boundary=0e01423d-76ed-458f-a858-e6dd3efab08d;start=metadata.1468196881355;type="application/json"
+
+
+17:28:01.484 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "db1c2d03-cbf0-496b-a945-488c3fc55e40",
+      "dialogRequestId" : "bb4155c4-117e-4a90-a7f7-54bf2e0e76fe"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_56939b47-9767-4dca-b2c7-a6e1c21a6c5c_1309969920",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_56939b47-9767-4dca-b2c7-a6e1c21a6c5c"
+    }
+  }
+}
+17:28:01.485 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "720ff4ca-ab36-404f-8a10-0d778649f561",
+      "dialogRequestId" : "bb4155c4-117e-4a90-a7f7-54bf2e0e76fe"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_0b61e6b4-6c3c-4b46-aa1c-fab7aeb84f59_1066030412",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_0b61e6b4-6c3c-4b46-aa1c-fab7aeb84f59"
+    }
+  }
+}
+17:28:01.485 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "7d8030ba-a4af-4daa-b44e-e48fd0e47cec",
+      "dialogRequestId" : "bb4155c4-117e-4a90-a7f7-54bf2e0e76fe"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_b9c27e72-c410-40ad-ad59-804ebc4e3707_1154804673",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_b9c27e72-c410-40ad-ad59-804ebc4e3707"
+    }
+  }
+}
+17:28:01.486 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "772b45a5-0821-4421-8ca5-2273013a45b8",
+      "dialogRequestId" : "bb4155c4-117e-4a90-a7f7-54bf2e0e76fe"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:28:01.490 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:01.490 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "3982851a-dd70-4c1a-bcfc-107b68bb6bbb"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_56939b47-9767-4dca-b2c7-a6e1c21a6c5c"
+    }
+  }
+}
+17:28:01.858 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:01.858 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-53-
+
+
+17:28:01.858 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:04.956 [Thread-96] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "13ba7afd-2cfe-4bbe-a49d-3048e445570f"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_56939b47-9767-4dca-b2c7-a6e1c21a6c5c"
+    }
+  }
+}
+17:28:04.956 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:04.956 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "b3d8bc70-c76f-4d2c-8385-4f59c0029053"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_0b61e6b4-6c3c-4b46-aa1c-fab7aeb84f59"
+    }
+  }
+}
+17:28:05.262 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:05.262 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-55-
+
+
+17:28:05.262 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:05.627 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:05.627 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-57-
+
+
+17:28:05.627 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:06.097 [Thread-100] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "05dfa41a-8504-4751-8baf-c296b49127a5"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_0b61e6b4-6c3c-4b46-aa1c-fab7aeb84f59"
+    }
+  }
+}
+17:28:06.097 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:06.098 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "c6002634-0c46-46c4-97ed-573a266e19cf"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_b9c27e72-c410-40ad-ad59-804ebc4e3707"
+    }
+  }
+}
+17:28:06.385 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:06.386 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-59-
+
+
+17:28:06.386 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:06.689 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:06.689 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-61-
+
+
+17:28:06.689 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:11.735 [Thread-102] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "c818651f-2b76-42bb-a2fe-99c946f0d8e8"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_b9c27e72-c410-40ad-ad59-804ebc4e3707"
+    }
+  }
+}
+17:28:11.735 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechRecognizer.ExpectSpeech
+17:28:12.017 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:12.017 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-63-
+
+
+17:28:12.017 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:12.549 [Thread-104] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "6720fc8b-ddac-46ed-868d-eb221bdc4436",
+      "dialogRequestId" : "69aee0ee-7b76-4bc6-9f77-b9dd47bcaf4b"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_b9c27e72-c410-40ad-ad59-804ebc4e3707",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:28:18.803 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:28:18.803 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-65-
+content-type: multipart/related;boundary=989b73c7-0aa4-4e24-bfe9-666b68c9bc53;start=metadata.1468196898768;type="application/json"
+
+
+17:28:18.892 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "28553ed4-6f18-462b-b772-7b03ecac0b29",
+      "dialogRequestId" : "69aee0ee-7b76-4bc6-9f77-b9dd47bcaf4b"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_ce5d3d0b-e709-4620-b611-ce568d98c9dd_962564382",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_ce5d3d0b-e709-4620-b611-ce568d98c9dd"
+    }
+  }
+}
+17:28:18.893 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "84e6bbfd-d1db-431c-8591-e26120fd2c47",
+      "dialogRequestId" : "69aee0ee-7b76-4bc6-9f77-b9dd47bcaf4b"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_688bdc51-de7a-4fa4-a97b-61df12e155ba_781704009",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_688bdc51-de7a-4fa4-a97b-61df12e155ba"
+    }
+  }
+}
+17:28:18.894 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "5d0e8316-e0a3-4e87-a31a-d3f34e798149",
+      "dialogRequestId" : "69aee0ee-7b76-4bc6-9f77-b9dd47bcaf4b"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3bda57f0-dcac-4e5c-84f2-8422108a6b31_420843418",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3bda57f0-dcac-4e5c-84f2-8422108a6b31"
+    }
+  }
+}
+17:28:18.895 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "1110e90a-0797-409c-845e-c2c2d3ce3740",
+      "dialogRequestId" : "69aee0ee-7b76-4bc6-9f77-b9dd47bcaf4b"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:28:18.897 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:18.897 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "3a32b059-eaa9-4777-86b4-e3c09d4c784a"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_ce5d3d0b-e709-4620-b611-ce568d98c9dd"
+    }
+  }
+}
+17:28:19.370 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:19.370 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-67-
+
+
+17:28:19.370 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:22.447 [Thread-112] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "37cc7679-b893-4c68-bf19-5a450678cba2"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_ce5d3d0b-e709-4620-b611-ce568d98c9dd"
+    }
+  }
+}
+17:28:22.447 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:22.447 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "72fb7589-7b68-41df-ac85-a340a6a548e8"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_688bdc51-de7a-4fa4-a97b-61df12e155ba"
+    }
+  }
+}
+17:28:22.733 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:22.733 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-69-
+
+
+17:28:22.733 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:23.021 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:23.021 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-71-
+
+
+17:28:23.021 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:23.584 [Thread-116] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "d15a1b30-b2fb-4754-834e-9f05b0cff288"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_688bdc51-de7a-4fa4-a97b-61df12e155ba"
+    }
+  }
+}
+17:28:23.584 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:23.584 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "4e49a0d0-a5d0-478b-a953-19b54da98031"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3bda57f0-dcac-4e5c-84f2-8422108a6b31"
+    }
+  }
+}
+17:28:23.872 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:23.872 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-73-
+
+
+17:28:23.872 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:24.178 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:24.178 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-75-
+
+
+17:28:24.178 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:34.947 [Thread-118] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "fdcca0e2-842d-41fc-b0f6-396400801e3e"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3bda57f0-dcac-4e5c-84f2-8422108a6b31"
+    }
+  }
+}
+17:28:34.947 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechRecognizer.ExpectSpeech
+17:28:35.178 [Thread-120] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "a80461ea-3b3e-485b-983e-21be76395f01",
+      "dialogRequestId" : "9b1dee51-fcb3-4b4f-b926-d3ff37592422"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_3bda57f0-dcac-4e5c-84f2-8422108a6b31",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:28:35.240 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:35.240 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-77-
+
+
+17:28:35.240 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:40.447 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:28:40.447 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-79-
+content-type: multipart/related;boundary=2077d3e8-3d8c-45a7-af18-899b1c3442e1;start=metadata.1468196920413;type="application/json"
+
+
+17:28:40.536 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "2608537d-c8dd-4ce6-b08b-004a4477f01f",
+      "dialogRequestId" : "9b1dee51-fcb3-4b4f-b926-d3ff37592422"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_192cfd72-a142-4adf-95ab-e7cde9de8333_755483374",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_192cfd72-a142-4adf-95ab-e7cde9de8333"
+    }
+  }
+}
+17:28:40.536 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "bab343d2-bcc8-4a77-aeed-b67409b77c99",
+      "dialogRequestId" : "9b1dee51-fcb3-4b4f-b926-d3ff37592422"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_caac2fd0-5b37-428c-98fc-84dd56d6e5e3_1654743499",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_caac2fd0-5b37-428c-98fc-84dd56d6e5e3"
+    }
+  }
+}
+17:28:40.537 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "69f4c4ab-0617-4e00-b9b6-d792e4963905",
+      "dialogRequestId" : "9b1dee51-fcb3-4b4f-b926-d3ff37592422"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_5c98980f-8f9a-43ad-b0db-37b8eb8f124a_1999792780",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_5c98980f-8f9a-43ad-b0db-37b8eb8f124a"
+    }
+  }
+}
+17:28:40.537 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "a0c22d3e-ba65-45f7-8fa4-054469827040",
+      "dialogRequestId" : "9b1dee51-fcb3-4b4f-b926-d3ff37592422"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:28:40.540 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:40.540 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "9b826453-0af6-4347-8657-e955100e23b9"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_192cfd72-a142-4adf-95ab-e7cde9de8333"
+    }
+  }
+}
+17:28:40.998 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:40.999 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-81-
+
+
+17:28:40.999 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:44.326 [Thread-127] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "876112a4-1a55-49eb-ad17-f44bcd467a15"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_192cfd72-a142-4adf-95ab-e7cde9de8333"
+    }
+  }
+}
+17:28:44.326 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:44.326 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "1a87f241-8c2f-4c88-8cef-5893a1a09bba"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_caac2fd0-5b37-428c-98fc-84dd56d6e5e3"
+    }
+  }
+}
+17:28:44.623 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:44.623 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-83-
+
+
+17:28:44.623 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:44.927 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:44.927 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-85-
+
+
+17:28:44.927 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:45.457 [Thread-131] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "5d2657e3-b169-472d-8dab-762796f08cdf"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_caac2fd0-5b37-428c-98fc-84dd56d6e5e3"
+    }
+  }
+}
+17:28:45.457 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:28:45.457 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "f9c2deb2-b36c-4e1c-a0e4-4bcb81aae395"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_5c98980f-8f9a-43ad-b0db-37b8eb8f124a"
+    }
+  }
+}
+17:28:45.750 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:45.750 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-87-
+
+
+17:28:45.750 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:46.089 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:46.089 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-89-
+
+
+17:28:46.089 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:28:53.396 [Thread-133] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "60dfef46-f581-4031-94fa-ab8f4bcabfa4"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_5c98980f-8f9a-43ad-b0db-37b8eb8f124a"
+    }
+  }
+}
+17:28:53.396 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechRecognizer.ExpectSpeech
+17:28:53.715 [Thread-135] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "b74f7e4e-14f2-4450-a226-8004d70ead5a",
+      "dialogRequestId" : "739fb7e7-afed-4559-ac62-227f86222ed6"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_5c98980f-8f9a-43ad-b0db-37b8eb8f124a",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:28:53.744 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:28:53.745 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-91-
+
+
+17:28:53.745 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:00.307 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:29:00.307 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-93-
+content-type: multipart/related;boundary=34cbd4ef-7e7d-4f3c-96c4-7e0ba2573bd9;start=metadata.1468196940267;type="application/json"
+
+
+17:29:00.407 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "3460c155-897c-4118-a1b2-7469035da48c",
+      "dialogRequestId" : "739fb7e7-afed-4559-ac62-227f86222ed6"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_11bf2741-7d48-4b8f-b063-c1513c65287e_1707372462",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_11bf2741-7d48-4b8f-b063-c1513c65287e"
+    }
+  }
+}
+17:29:00.408 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "5fd29d68-9b67-446e-8a81-64a3fbbec1ac",
+      "dialogRequestId" : "739fb7e7-afed-4559-ac62-227f86222ed6"
+    },
+    "payload" : {
+      "url" : "cid:AlexaSkillsKitActveAudio_24cee59e-bce3-47ca-a4a6-b722f31acc18_611442716",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_24cee59e-bce3-47ca-a4a6-b722f31acc18"
+    }
+  }
+}
+17:29:00.408 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "99482728-815d-4ed7-8fff-5d887af5770b",
+      "dialogRequestId" : "739fb7e7-afed-4559-ac62-227f86222ed6"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_6bf3dad6-fcd5-4ced-8ea5-2649f4811cdc_913350775",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_6bf3dad6-fcd5-4ced-8ea5-2649f4811cdc"
+    }
+  }
+}
+17:29:00.409 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "ExpectSpeech",
+      "messageId" : "137234f5-b8ef-4e29-9d5c-c5a4fe11ea82",
+      "dialogRequestId" : "739fb7e7-afed-4559-ac62-227f86222ed6"
+    },
+    "payload" : {
+      "timeoutInMilliseconds" : 8000
+    }
+  }
+}
+17:29:00.411 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:29:00.411 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "1b21de2e-7a3c-443b-a1d9-5da8d54a4736"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_11bf2741-7d48-4b8f-b063-c1513c65287e"
+    }
+  }
+}
+17:29:00.912 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:00.912 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-95-
+
+
+17:29:00.912 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:03.816 [Thread-144] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "4507398a-51c6-4c69-8c56-49c57d2fbd4e"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_11bf2741-7d48-4b8f-b063-c1513c65287e"
+    }
+  }
+}
+17:29:03.816 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:29:03.817 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "ab77f0a4-13d2-400e-a383-79065738a87e"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_24cee59e-bce3-47ca-a4a6-b722f31acc18"
+    }
+  }
+}
+17:29:04.127 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:04.127 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-97-
+
+
+17:29:04.127 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:04.424 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:04.424 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-99-
+
+
+17:29:04.424 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:04.954 [Thread-148] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "715bbe40-335d-415b-a154-18d782967775"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#AlexaSkillsKitActveAudio_24cee59e-bce3-47ca-a4a6-b722f31acc18"
+    }
+  }
+}
+17:29:04.954 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:29:04.954 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "8200ccbe-e814-4e1e-b80d-77b69d264218"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_6bf3dad6-fcd5-4ced-8ea5-2649f4811cdc"
+    }
+  }
+}
+17:29:05.236 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:05.236 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-101-
+
+
+17:29:05.236 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:05.528 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:05.529 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-103-
+
+
+17:29:05.529 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:13.054 [Thread-150] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "b74a5f97-b2af-46a9-82da-1541a0f27219"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_6bf3dad6-fcd5-4ced-8ea5-2649f4811cdc"
+    }
+  }
+}
+17:29:13.054 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechRecognizer.ExpectSpeech
+17:29:13.398 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:13.398 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-105-
+
+
+17:29:13.398 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:13.518 [Thread-152] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "36d6b71b-2337-4693-af7e-a63920264178",
+      "dialogRequestId" : "304a2c0b-ccce-4d91-bf7b-f3db5d99bc17"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_6bf3dad6-fcd5-4ced-8ea5-2649f4811cdc",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:29:19.511 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:29:19.511 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-107-
+content-type: multipart/related;boundary=81556b19-cf93-4e56-b63c-0164c2c3f4c7;start=metadata.1468196959474;type="application/json"
+
+
+17:29:19.605 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "0a4873bf-b9cc-49ef-9e85-6dee47f378b1",
+      "dialogRequestId" : "304a2c0b-ccce-4d91-bf7b-f3db5d99bc17"
+    },
+    "payload" : {
+      "url" : "cid:OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_2ef13c87-eac0-44d7-9d7d-c4c4d318e6dc_762392733",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_2ef13c87-eac0-44d7-9d7d-c4c4d318e6dc"
+    }
+  }
+}
+17:29:19.788 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:29:19.788 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "81dcc12c-5e82-4bd0-b13d-8b5146c5327f"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_2ef13c87-eac0-44d7-9d7d-c4c4d318e6dc"
+    }
+  }
+}
+17:29:20.075 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:20.075 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-109-
+
+
+17:29:20.075 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:33.631 [Thread-162] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "b7fb0fac-8365-4496-ae2c-d61e35bb3c4c"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_2ef13c87-eac0-44d7-9d7d-c4c4d318e6dc"
+    }
+  }
+}
+17:29:33.924 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:33.924 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-111-
+
+
+17:29:33.924 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:37.044 [Thread-28] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechRecognizer",
+      "name" : "Recognize",
+      "messageId" : "c5dd93bd-b2fe-49c8-9e6d-297d14aa747a",
+      "dialogRequestId" : "2563618a-3651-4178-bffe-fe84d5fa9700"
+    },
+    "payload" : {
+      "profile" : "CLOSE_TALK",
+      "format" : "AUDIO_L16_RATE_16000_CHANNELS_1"
+    }
+  },
+  "context" : [ {
+    "header" : {
+      "namespace" : "AudioPlayer",
+      "name" : "PlaybackState"
+    },
+    "payload" : {
+      "token" : "",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "IDLE"
+    }
+  }, {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechState"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.ThirdPartySdkSpeechlet#ACRI#OutputSpeechResponseHandler_amzn1.echo-sdk-ams.app.6d474311-b5aa-4f47-a97b-1036bc3e1954_2ef13c87-eac0-44d7-9d7d-c4c4d318e6dc",
+      "offsetInMilliseconds" : 0,
+      "playerActivity" : "FINISHED"
+    }
+  }, {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "AlertsState"
+    },
+    "payload" : {
+      "allAlerts" : [ ],
+      "activeAlerts" : [ ]
+    }
+  }, {
+    "header" : {
+      "namespace" : "Speaker",
+      "name" : "VolumeState"
+    },
+    "payload" : {
+      "volume" : 50,
+      "muted" : false
+    }
+  } ]
+}
+17:29:42.730 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 200
+17:29:42.730 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-113-
+content-type: multipart/related;boundary=a254f372-876a-469b-9d72-e5dc5a4871a2;start=metadata.1468196982696;type="application/json"
+
+
+17:29:42.818 [RequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "Speak",
+      "messageId" : "3f17c15e-b454-43d9-947d-a969de6ee400",
+      "dialogRequestId" : "2563618a-3651-4178-bffe-fe84d5fa9700"
+    },
+    "payload" : {
+      "url" : "cid:SetTimerPrompt-e7806cd5-d406-4563-af62-2ebf662d64be_1922798590",
+      "format" : "AUDIO_MPEG",
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#SetTimerPrompt-e7806cd5-d406-4563-af62-2ebf662d64be"
+    }
+  }
+}
+17:29:42.819 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: SpeechSynthesizer.Speak
+17:29:42.819 [DependentDirectiveThread] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechStarted",
+      "messageId" : "b1da612c-b2a2-43d1-94e4-4098e1266f2a"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#SetTimerPrompt-e7806cd5-d406-4563-af62-2ebf662d64be"
+    }
+  }
+}
+17:29:43.153 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:43.153 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-115-
+
+
+17:29:43.153 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:45.305 [Thread-174] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "SpeechSynthesizer",
+      "name" : "SpeechFinished",
+      "messageId" : "bd33fa14-248d-43b1-80e9-01a9c12a5b20"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#ACRI#SetTimerPrompt-e7806cd5-d406-4563-af62-2ebf662d64be"
+    }
+  }
+}
+17:29:45.600 [DownchannelRequestThread] INFO  com.amazon.alexa.avs.http.MessageParser - Response metadata: 
+{
+  "directive" : {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "SetAlert",
+      "messageId" : "ed0901ae-ae00-440b-bc88-019062053c3d"
+    },
+    "payload" : {
+      "type" : "TIMER",
+      "scheduledTime" : "2016-07-11T00:30:05+0000",
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#DNID#a0a72d70-8373-3858-b63d-5faa9fab95ad"
+    }
+  }
+}
+17:29:45.617 [IndependentDirectiveThread] INFO  com.amazon.alexa.avs.AVSController - Handling directive: Alerts.SetAlert
+17:29:45.619 [IndependentDirectiveThread] DEBUG com.amazon.alexa.avs.AlertManager - Adding alert with token amzn1.as-ct.v1.Domain:Application:Notifications#DNID#a0a72d70-8373-3858-b63d-5faa9fab95ad
+17:29:45.625 [pool-6-thread-1] INFO  com.amazon.alexa.avs.http.AVSClient - Request metadata: 
+{
+  "event" : {
+    "header" : {
+      "namespace" : "Alerts",
+      "name" : "SetAlertSucceeded",
+      "messageId" : "6fdd785e-d778-4fa9-8703-b0a21e656fd3"
+    },
+    "payload" : {
+      "token" : "amzn1.as-ct.v1.Domain:Application:Notifications#DNID#a0a72d70-8373-3858-b63d-5faa9fab95ad"
+    }
+  }
+}
+17:29:45.779 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:45.779 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-117-
+
+
+17:29:45.779 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:45.879 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response code: 204
+17:29:45.879 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - Response headers: access-control-allow-origin: *
+x-amzn-requestid: 12c34cfffe49ac2f-00000977-00012376-9ce0b3fccb7144b4-9db69eeb-119-
+
+
+17:29:45.879 [RequestThread] INFO  com.amazon.alexa.avs.http.AVSClient - This response successfully had no content.
+17:29:47.713 [Thread-11] INFO  com.amazon.alexa.avs.http.AVSClient - HttpClient stopping
+17:29:47.714 [Thread-11] INFO  com.amazon.alexa.avs.http.AVSClient - [java.lang.Thread.getStackTrace(Thread.java:1552), com.amazon.alexa.avs.http.AVSClient$1.lifeCycleStopping(AVSClient.java:180), org.eclipse.jetty.util.component.AbstractLifeCycle.setStopping(AbstractLifeCycle.java:197), org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:88), com.amazon.alexa.avs.http.AVSClient.shutdown(AVSClient.java:441), com.amazon.alexa.avs.AVSController$2.run(AVSController.java:126)]

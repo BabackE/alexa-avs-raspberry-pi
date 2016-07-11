@@ -1,7 +1,6 @@
 package com.nascent.alexa.client;
 
 import java.io.InputStream;
-import java.util.HashSet;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
@@ -18,6 +17,9 @@ import org.slf4j.LoggerFactory;
 
 import uk.co.caprica.vlcj.component.AudioMediaPlayerComponent;
 
+//com.nascent.alexa.client.TestAudioPlayer
+//----------------------------------------
+// minimal dependency testing class for audio functionality needed by alexa client
 public class TestAudioPlayer {
 	
 	private static final Logger log = LoggerFactory.getLogger(TestAudioPlayer.class);

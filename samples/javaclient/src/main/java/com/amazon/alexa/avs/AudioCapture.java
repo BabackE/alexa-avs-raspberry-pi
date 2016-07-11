@@ -66,6 +66,7 @@ public class AudioCapture {
 
     public void stopCapture() {
         microphoneLine.stop();
+        microphoneLine.read(new byte[microphoneLine.available()], 0, microphoneLine.available());
         microphoneLine.close();
 
     }
